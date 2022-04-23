@@ -38,21 +38,28 @@ run = {
 
 model = get_classifier(run, resnet_model, os.path.join(workdir, 'models', 'my_model', 'my_model'))
 
-labels = ['AnnualCrop', 'Forest', 'HerbaceousVegetation', 'Highway',
-          'Industrial', 'Pasture', 'PermanentCrop', 'Residential', 'River',
+labels = ['AnnualCrop',
+          'Forest',
+          'HerbaceousVegetation',
+          'Highway',
+          'Industrial',
+          'Pasture',
+          'PermanentCrop',
+          'Residential',
+          'River',
           'SeaLake']
 
 color_dict = {
     0: 'orange',
-    1: 'red',
-    2: 'green',
-    3: 'yellow',
-    4: 'blue',
-    5: 'black',
-    6: 'gray',
+    1: 'green',
+    2: 'yellow',
+    3: 'black',
+    4: 'gray',
+    5: 'brown',
+    6: 'red',
     7: 'pink',
-    8: 'brown',
-    9: 'cyan',
+    8: 'lightblue',
+    9: 'blue',
 }
 
 level_dict = {
