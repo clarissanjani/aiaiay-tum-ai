@@ -1,9 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, IconButton, Toolbar, Collapse } from '@material-ui/core';
+import { AppBar, IconButton, Toolbar, Collapse, Box, Button } from '@material-ui/core';
 import SortIcon from '@material-ui/icons/Sort';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link as Scroll } from 'react-scroll';
+import { Link } from 'react-router-dom'
+
+const commonStyles = {
+  bgcolor: 'background.paper',
+  borderColor: 'text.primary',
+  m: 1,
+  border: 1,
+  width: '5rem',
+  height: '5rem',
+};
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '2rem',
   },
   colorText: {
-    color: 'FFE5CC',
+    color: '8E4646',
   },
   container: {
     textAlign: 'center',
@@ -55,12 +65,8 @@ export default function Header() {
           <h1 className={classes.appbarTitle}>
             brightly<span className={classes.colorText}>.ai</span>
           </h1>
-          <IconButton>
-            <SortIcon className={classes.icon} />
-          </IconButton>
         </Toolbar>
       </AppBar>
-
       <Collapse
         in={checked}
         {...(checked ? { timeout: 1000 } : {})}
@@ -71,6 +77,13 @@ export default function Header() {
             Green electricity<br />
             <span className={classes.colorText}>for everyone everywhere</span>
           </h1>
+          <Button
+              type="button"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href='/MapVisual.html';
+                }}
+          > Click here</Button>
           <Scroll to="value-prop" smooth={true}>
             <IconButton>
               <ExpandMoreIcon className={classes.goDown} />

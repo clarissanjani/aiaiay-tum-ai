@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     height: 440,
   },
   title: {
-    fontFamily: 'Nunito',
+    fontFamily: 'Darker Grotesque',
     fontWeight: 'bold',
     fontSize: '2rem',
     color: '#fff',

@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { CssBaseline } from '@material-ui/core';
 import Header from './components/Header';
 import ValueProp from './components/ValueProp';
-import MapVisual from './components/MapVisual';
+//import MapVisual from './components/MapVisual';
 
 const useStyles = makeStyles((theme) => ({
   root: {
