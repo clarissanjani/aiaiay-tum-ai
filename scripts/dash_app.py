@@ -7,8 +7,8 @@ import time
 
 import os
 
-# from scripts.coordinate_helpers import coords_by_adress
-# from scripts.create_map import create_map
+from scripts.coordinate_helpers import coords_by_adress
+from scripts.create_map import create_map
 
 workdir = os.path.dirname(os.path.dirname(__file__))
 
@@ -42,18 +42,18 @@ app.layout = html.Div(
     },
 )
 
-# @app.callback(
-#     [Output("output", "children"), Output("map", "srcDoc")],
-#     Input('submit', 'n_clicks'),
-#     State("input1", "value"),
-# )
-# def update_output( n_clicks, input1):
-#     if n_clicks:
-#         create_map(coords_by_adress(input1))
-#         # time.sleep()
-#         return '', open('map.html', 'r').read()
-#     else:
-#         return '', open('map.html', 'r').read()
+@app.callback(
+    [Output("output", "children"), Output("map", "srcDoc")],
+    Input('submit', 'n_clicks'),
+    State("input1", "value"),
+)
+def update_output( n_clicks, input1):
+    if n_clicks:
+        create_map(coords_by_adress(input1))
+        # time.sleep()
+        return '', open('map.html', 'r').read()
+    else:
+        return '', open('map.html', 'r').read()
 
 
 if __name__ == '__main__':
