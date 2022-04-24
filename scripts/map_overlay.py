@@ -164,4 +164,5 @@ def class_geojson_from_pos(pos, save_file=True):
     return geojson
 
 
-create_legend(color_dict, labels)
+# create_legend(color_dict, labels)
+
