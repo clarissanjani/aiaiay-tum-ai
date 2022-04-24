@@ -43,17 +43,17 @@ app.layout = html.Div(
 )
 
 @app.callback(
-    [Output("output", "children"), Output("map", "srcDoc")],
+    Output("map", "srcDoc"),
     Input('submit', 'n_clicks'),
     State("input1", "value"),
 )
-def update_output( n_clicks, input1):
+def update_output(n_clicks, input1):
     if n_clicks:
         create_map(coords_by_adress(input1))
         # time.sleep()
-        return '', open('map.html', 'r').read()
+        return open('map.html', 'r').read()
     else:
-        return '', open('map.html', 'r').read()
+        return open('map.html', 'r').read()
 
 
 if __name__ == '__main__':
