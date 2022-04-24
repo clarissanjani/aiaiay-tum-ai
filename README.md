@@ -14,7 +14,7 @@ Due to the increasing amount of satellite data, as well as improvements in compu
 
 # Solution:
 
-#Key Features:
+# Key Features:
  - Dash Frontend for the functional MVP
  - React Frontend for vision
  - Backend for data processing 
