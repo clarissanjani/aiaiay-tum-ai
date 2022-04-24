@@ -12,9 +12,18 @@ Due to the increasing amount of satellite data, as well as improvements in compu
 
 # Problem:
 
-# Idea/ Solution:
+# Solution:
 
-# Deliverables & Folder Structure:
+#Key Features:
+ - Dash Frontend for the functional MVP
+ - React Frontend for vision
+ - Backend for data processing 
+   - NN for image classification based on [EuroSAT](https://github.com/phelber/EuroSAT) dataset
+   - Google Maps API integration
+   - Weather Data Pipeline 
+ - Recommendation System for energy solution
+
+# Folder Structure:
  - Business Model Canvas 
  - Pitch Deck
  - Software (Backend)
