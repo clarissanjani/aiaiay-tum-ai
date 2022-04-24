@@ -1,37 +1,28 @@
-import React from 'react';
-import ReactDOM from "react-dom";
+import React, { Component } from 'react';
+import Page from './MapVisual.html';
 import { makeStyles } from '@material-ui/core/styles';
-import ImageCard from './ImageCard';
-import places from '../static/values';
 import useWindowPosition from '../hook/useWindowPosition';
-
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 645,
-    background: 'rgba(0,0,0,0.5)',
-    margin: '20px',
+    minHeight: '100vh',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    [theme.breakpoints.down('md')]: {
+      flexDirection: 'column',
+    },
   },
-  media: {
-    height: 440,
-  },
-  title: {
-    fontFamily: 'Darker Grotesque',
-    fontWeight: 'bold',
-    fontSize: '2rem',
-    color: '#fff',
-  },
-  desc: {
-    fontFamily: 'Darker Grotesque',
-    fontSize: '1.1rem',
-    color: '#ddd',
-  },
-});
+}));
 
-export default function ImageCard({ place, checked }) {
-  const classes = useStyles();
-    render() {
-      return <iframe src="https://www.youtube.com/embed/cWDJoK8zw58" />;
-    }
+var htmlDoc = {__html: Page};
 
-}
-ReactDOM.render(<App />, document.getElementById("container"));
+export default class Doc extends Component {
+  constructor(props){
+    super(props);
+  }
+
+
+  render(){
+     return (<div dangerouslySetInnerHTML={htmlDoc} />)
+}}
+
