@@ -3,12 +3,11 @@ Description: To be able to implement effective environmental policies, it is cri
 
 Due to the increasing amount of satellite data, as well as improvements in computer vision, researchers have recently started to use AI to automatically determine land usage from space.
 
-An especially interesting use case of land usage is to determine where to best plant vegetation for the highest impact on reducing climate change.
 
 # Challenge
 
-- Build a model that accurately predicts land usage from satellite image data using the [EuroSAT](https://github.com/phelber/EuroSAT) dataset – feel free to use a pretrained model as a baseline
-- Provide a compelling demo to showcase how the model works on a region of the world where land usage data is lacking – showing a downstream use case of land usage prediction is a plus!
+- Build a model that accurately predicts land usage from satellite image data using the [EuroSAT](https://github.com/phelber/EuroSAT) dataset
+- Provide a compelling demo to showcase how the model works on a region of the world where land usage data is lacking – showing a downstream use case of land usage prediction!
 - Provide a business plan & market analysis to turn this prototype into a startup
 
 # Problem:
