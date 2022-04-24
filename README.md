@@ -1,4 +1,4 @@
-# TUM.ai Makeathon Challenge
+# Brightly.AI
 Description: To be able to implement effective environmental policies, it is critical to first understand how the environment is being used (e.g. industry, farming, forest). In many areas of the world, official data is lacking, meaning it is incredibly difficult to assess the true impact and thus to plan ahead.
 
 Due to the increasing amount of satellite data, as well as improvements in computer vision, researchers have recently started to use AI to automatically determine land usage from space.
@@ -29,4 +29,4 @@ Due to the increasing amount of satellite data, as well as improvements in compu
  - Software (Backend)
  - Software (Frontend) 
 
-Note: 
+Note: Use !pip3 install -r requirements.txt
