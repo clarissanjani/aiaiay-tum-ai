@@ -98,6 +98,9 @@ def getCorners(center, zoom, mapWidth, mapHeight):
 
 
 def coords_by_adress(address):
-    url = 'https://nominatim.openstreetmap.org/search/' + urllib.parse.quote(address) + '?format=json'
+    url = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + urllib.parse.quote(str(address)) + '&key=AIzaSyA4QuvbHhh74WAVWc_rpCJNbywBGRWL5qU'
     response = requests.get(url).json()
-    return response[0]["lat"], response[0]["lon"]
+    # print(GoogleMaps().address_to_latlng(address))
+    print(url)
+    res = response['results'][0]['geometry']['location']
+    return res["lat"], res["lng"]

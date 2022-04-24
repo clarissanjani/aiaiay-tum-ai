@@ -56,7 +56,7 @@ def create_map(position):
     plugins.Fullscreen().add_to(m)
 
     m.save('map.html')
-    webbrowser.open("map.html")
+    # webbrowser.open("map.html")
 
 if __name__ == '__main__':
     create_map(position)
