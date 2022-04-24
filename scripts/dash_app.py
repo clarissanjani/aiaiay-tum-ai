@@ -9,6 +9,7 @@ import os
 import sys
 
 workdir = os.path.dirname(os.path.dirname(__file__))
+print(workdir)
 
 sys.path.append(workdir)
 
@@ -64,3 +65,4 @@ def update_output(n_clicks, input1):
 
 if __name__ == '__main__':
     app.run_server(debug=True)
+
