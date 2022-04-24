@@ -18,19 +18,28 @@ Due to the increasing amount of satellite data, as well as improvements in compu
 Leveraging AI to analyze satellite imagery, our solution recommends the best areas to develop renewable energy sites so that farmers and governments have new plans of action to transition to sustainable energy sources such as wind and solar energy
 
 # Key Features:
- - Dash Frontend for the functional MVP
- - React Frontend for vision
- - Backend for data processing 
-   - NN for image classification based on [EuroSAT](https://github.com/phelber/EuroSAT) dataset
+ - React frontend webpage with project vision -- check _aiaiay-app_ package 
+ - React frontend dashboard with vision functionalities -- check _aiaiay-dashboard_
+   - Recommendation system for energy solution according to processed data
+ - Dash frontend with functional MVP -- check _scripts/dash_app.py_ 
+   - Takes city name as input 
+   - Runs backend with data processing
+   - Outputs processed image according to input with algorithmic visualization
+ - Python backend with data processing -- check _scripts_ and _notebooks_
+   - NN trained for image classification based on [EuroSAT](https://github.com/phelber/EuroSAT) dataset
    - Google Maps API integration
-   - Weather Data Pipeline 
- - Recommendation System for energy solution
+   - Weather data pipeline 
+ 
 
 # Folder Structure:
- - Business Model Canvas 
- - Pitch Deck
- - Software (Backend)
- - Software (Frontend) 
+ - Packages:
+   - _aiaiay-app_
+   - _aiaiay-dashboard_
+   - _scripts_
+   - _notebooks_
+ - Output and Files:
+   - _ppt_ (Slide Deck + Business Model Canvas)
+   - _html_ (Weather maps) 
 
 Note: Use $ !pip3 install -r requirements.txt
 
