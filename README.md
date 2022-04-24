@@ -29,4 +29,4 @@ Due to the increasing amount of satellite data, as well as improvements in compu
  - Software (Backend)
  - Software (Frontend) 
 
-Note: Use !pip3 install -r requirements.txt
+Note: Use $ !pip3 install -r requirements.txt
