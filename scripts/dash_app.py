@@ -6,11 +6,18 @@ from dash.dependencies import Input, Output, State
 import time
 
 import os
+import sys
+
+workdir = os.path.dirname(os.path.dirname(__file__))
+
+sys.path.append(workdir)
+
+
 
 from scripts.coordinate_helpers import coords_by_adress
 from scripts.create_map import create_map
 
-workdir = os.path.dirname(os.path.dirname(__file__))
+
 
 external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]
 
