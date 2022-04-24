@@ -11,8 +11,11 @@ Due to the increasing amount of satellite data, as well as improvements in compu
 - Provide a business plan & market analysis to turn this prototype into a startup
 
 # Problem:
+- Record highs in greenhouse gas emissions with electricity causing 73% of it
+- Inefficient usage of unused land to harness renewable energy sources
 
 # Solution:
+Leveraging AI to analyze satellite imagery, our solution recommends the best areas to develop renewable energy sites so that farmers and governments have new plans of action to transition to sustainable energy sources such as wind and solar energy
 
 # Key Features:
  - Dash Frontend for the functional MVP
