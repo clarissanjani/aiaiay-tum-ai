@@ -5,16 +5,14 @@ Due to the increasing amount of satellite data, as well as improvements in compu
 
 
 # Challenge
+
 - Build a model that accurately predicts land usage from satellite image data using the [EuroSAT](https://github.com/phelber/EuroSAT) dataset
 - Provide a compelling demo to showcase how the model works on a region of the world where land usage data is lacking – showing a downstream use case of land usage prediction!
 - Provide a business plan & market analysis to turn this prototype into a startup
 
 # Problem:
-- Record highs of greenhouse gas emissions, with electricity generation accounting for 73% of emissions
-- Unused land that could be used for renewable energy sites
 
 # Solution:
-Leverage AI to analzye satellite imagery to recommend optimal locations for different renewable sources, so that governments and farmers can transition to more susstainable energy
 
 # Key Features:
  - Dash Frontend for the functional MVP
