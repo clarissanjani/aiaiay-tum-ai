@@ -1,19 +1,19 @@
 import base64
-import webbrowser
+# import webbrowser
 import folium
-from IPython.core.display_functions import display
+# from IPython.core.display_functions import display
 from folium import plugins
-import ee
+# import ee
 import os, sys
 
 from folium.plugins import FloatImage
-from IPython.display import HTML
+# from IPython.display import HTML
 
 workdir = os.path.dirname(os.path.dirname(__file__))
 
 sys.path.append(workdir)
 
-from scripts.ee_handler import basemaps
+# from scripts.ee_handler import basemaps
 from scripts.map_overlay import color_dict, position, class_geojson_from_pos
 
 
