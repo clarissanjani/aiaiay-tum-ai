@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import SendIcon from '@mui/icons-material/Send';
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, IconButton, Toolbar, Collapse, Button} from '@material-ui/core';
+import { AppBar, IconButton, Toolbar, Collapse, Box, Button } from '@material-ui/core';
 import SortIcon from '@material-ui/icons/Sort';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link as Scroll } from 'react-scroll';
 import { Link } from 'react-router-dom'
-import NavigationIcon from '@mui/icons-material/Navigation';
 
 const commonStyles = {
   bgcolor: 'background.paper',
@@ -79,19 +77,13 @@ export default function Header() {
             Green electricity<br />
             <span className={classes.colorText}>for everyone everywhere</span>
           </h1>
-              <h5 className={classes.title}>
-                    Let's find out where the best place for renewables is
-                 </h5>
-                  <Button
-                      variant="contained"
-                      type="button"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        window.location.href='/MapVisual.html';
-                        }}
-                  >
-            View our dashboard
-            </Button>
+          <Button
+              type="button"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href='/MapVisual.html';
+                }}
+          > Click here</Button>
           <Scroll to="value-prop" smooth={true}>
             <IconButton>
               <ExpandMoreIcon className={classes.goDown} />
