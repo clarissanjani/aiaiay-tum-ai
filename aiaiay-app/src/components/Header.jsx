@@ -62,9 +62,7 @@ export default function Header() {
     <div className={classes.root} id="header">
       <AppBar className={classes.appbar} elevation={0}>
         <Toolbar className={classes.appbarWrapper}>
-          <h1 className={classes.appbarTitle}>
-            brightly<span className={classes.colorText}>.ai</span>
-          </h1>
+          <img src="/assets/Brightly.png" width="300"/>
         </Toolbar>
       </AppBar>
       <Collapse
