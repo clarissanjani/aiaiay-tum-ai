@@ -30,3 +30,6 @@ Due to the increasing amount of satellite data, as well as improvements in compu
  - Software (Frontend) 
 
 Note: Use $ !pip3 install -r requirements.txt
+
+# License and Copyright
+© Leopold Wieser, Clarissa Anjani, Lilly Kaemmerling, Leonard Wolters, Juan Carlos Climent Pardo
