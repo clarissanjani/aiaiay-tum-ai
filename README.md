@@ -6,3 +6,5 @@ Business Model Canvas:
 Pitch Deck: 
 
 Location of files in the repository:
+
+tests
