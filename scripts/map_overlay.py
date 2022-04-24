@@ -21,20 +21,12 @@ from scripts.resnet_model import resnet_model
 from scripts.image_helpers import sliding_window, create_legend
 from scripts.coordinate_helpers import G_LatLng, getCorners, pointiterator
 
-run = {
-    "name": "resnet_model",
-    "epochs": 10,
-    "iterations": 1,
-    "batch_size": 64,
-    "learning_rate": 3e-4,
-    "class_weights": False,
-    "layer_sizes": [
-        1024,
-        512,
-        128
-    ],
-    "dropout_factor": 0.3
-}
+run = {'epochs': 25,
+       'iterations': 7,
+       'batch_size': 128,
+       'learning_rate': 1e-05,
+       'layer_sizes': [2263, 1131, 565],
+       'dropout_factor': 0.2}
 
 model = get_classifier(run, resnet_model, os.path.join(workdir, 'models', 'my_model', 'my_model'))
 
@@ -163,6 +155,4 @@ def class_geojson_from_pos(pos, save_file=True):
             json.dump(geojson, outfile)
     return geojson
 
-
 # create_legend(color_dict, labels)
-
