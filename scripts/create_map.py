@@ -21,7 +21,7 @@ def create_map(position):
     # ee.Authenticate()
     # ee.Initialize()
 
-    my_map = folium.Map(location=[20, 0], zoom_start=3, height=500)
+    # my_map = folium.Map(location=[20, 0], zoom_start=3, height=500)
     m = folium.Map(location=position,
                    zoom_start=13)
 
@@ -44,7 +44,7 @@ def create_map(position):
         # open in binary mode, read bytes, encode, decode obtained bytes as utf-8 string
         b64_content = base64.b64encode(lf.read()).decode('utf-8')
 
-    FloatImage('data:image/png;base64,{}'.format(b64_content), bottom=0, left=86).add_to(m)
+    FloatImage('data:image/png;base64,{}'.format(b64_content), bottom=0, left=80).add_to(m)
 
     # # Add the elevation model to the map object.
     # my_map.add_ee_layer(dem.updateMask(dem.gt(0)), vis_params, 'DEM')
