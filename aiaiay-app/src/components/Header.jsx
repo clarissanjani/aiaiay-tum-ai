@@ -78,12 +78,12 @@ export default function Header() {
             <span className={classes.colorText}>for everyone everywhere</span>
           </h1>
           <Button
-              type="button"
+              type="button" variant="contained"
               onClick={(e) => {
                 e.preventDefault();
                 window.location.href='/MapVisual.html';
                 }}
-          > Click here</Button>
+          >See our dashboard and find renewable energy sites around the world</Button>
           <Scroll to="value-prop" smooth={true}>
             <IconButton>
               <ExpandMoreIcon className={classes.goDown} />
