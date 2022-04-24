@@ -12,12 +12,8 @@ workdir = os.path.dirname(os.path.dirname(__file__))
 
 sys.path.append(workdir)
 
-
-
 from scripts.coordinate_helpers import coords_by_adress
 from scripts.create_map import create_map
-
-
 
 external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]
 
@@ -33,12 +29,14 @@ app.layout = html.Div(
         html.Br(),
         html.Div(
             [
-                dcc.Input(id="input1", type="text", placeholder="Enter Adress", debounce=True, style={'marginRight': '10px', 'justify-content':'center'}),
+                dcc.Input(id="input1", type="text", placeholder="Enter Adress", debounce=True,
+                          style={'marginRight': '10px', 'justify-content': 'center'}),
                 html.Button('Go', id='submit', style={'background-color': 'white', 'opacity': '0.5'})
-            ], style={'width': '50%','padding-left':'25%', 'padding-right':'25%', 'padding-top': '50%'}),
+            ], style={'width': '50%', 'padding-left': '25%', 'padding-right': '25%', 'padding-top': '50%'}),
         html.Br(),
         html.Br(),
-        html.Div(html.Iframe(id='map', srcDoc=open('map.html', 'r').read(), width='100%', height=600), style={'width': '80%','padding-left':'10%', 'padding-right':'10%'})
+        html.Div(html.Iframe(id='map', srcDoc=open('map.html', 'r').read(), width='100%', height=600),
+                 style={'width': '80%', 'padding-left': '10%', 'padding-right': '10%'})
     ],
     style={
         'minHeight': '100vh',
@@ -48,6 +46,7 @@ app.layout = html.Div(
         'width': '100%',
     },
 )
+
 
 @app.callback(
     Output("map", "srcDoc"),
